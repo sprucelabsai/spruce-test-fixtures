@@ -39,14 +39,12 @@
 		"upgrade.packages.test": "yarn upgrade.packages.all && yarn lint && yarn build && yarn test"
 	},
 	"dependencies": {
-		"@nlpjs/nlu": "^4.19.1",
 		"@sprucelabs/error": "latest",
-		"@sprucelabs/schema": "^19.0.1",
-		"@sprucelabs/spruce-core-schemas": "^22.1.10",
-		"@sprucelabs/spruce-event-utils": "^9.1.0",
-		"@sprucelabs/spruce-skill-utils": "^15.2.0",
-		"globby": "^11.0.2",
-		"node-nlp": "^4.19.1"
+		"@sprucelabs/mercury-client": "latest",
+		"@sprucelabs/schema": "latest",
+		"@sprucelabs/spruce-core-schemas": "latest",
+		"@sprucelabs/spruce-event-utils": "latest",
+		"@sprucelabs/spruce-skill-utils": "latest"
 	},
 	"devDependencies": {
 		"@babel/cli": "^7.12.10",
@@ -56,11 +54,11 @@
 		"@babel/plugin-transform-runtime": "^7.12.10",
 		"@babel/preset-env": "^7.12.11",
 		"@babel/preset-typescript": "^7.12.7",
-		"@sprucelabs/babel-plugin-schema": "^4.0.1",
+		"@sprucelabs/babel-plugin-schema": "latest",
 		"@sprucelabs/jest-json-reporter": "latest",
 		"@sprucelabs/semantic-release": "latest",
 		"@sprucelabs/test": "latest",
-		"@sprucelabs/test-utils": "^3.0.33",
+		"@sprucelabs/test-utils": "latest",
 		"@types/node": "^14.14.21",
 		"babel-plugin-module-resolver": "^4.1.0",
 		"chokidar-cli": "^2.1.0",

@@ -74,9 +74,9 @@
             }
         },
         {
-            "label": "yarn",
+            "label": "shell",
             "type": "shell",
-            "command": "yarn ${input:yarnCommand}",
+            "command": "${input:command} ${input:optionsCommand}",
             "problemMatcher": [],
             "presentation": {
                 "reveal": "always",
@@ -94,8 +94,14 @@
             "type": "promptString"
         },
         {
-            "id": "yarnCommand",
-            "description": "yarn command",
+            "id": "command",
+            "description": "command",
+            "default": "yarn",
+            "type": "promptString"
+        },
+        {
+            "id": "optionsCommand",
+            "description": "optionsCommand",
             "default": "add",
             "type": "promptString"
         }

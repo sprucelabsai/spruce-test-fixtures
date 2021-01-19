@@ -7,9 +7,6 @@ export default class SpruceError extends BaseSpruceError<ErrorOptions> {
 		const { options } = this
 		let message
 		switch (options?.code) {
-			case 'INVALID_TOPIC':
-				message = `The conversation topic defined in ${options.topicScript} is not valid.`
-				break
 			case 'MISSING_PARAMETERS':
 				message = `Looks like you're missing the following parameters: ${options.parameters.join(
 					', '
