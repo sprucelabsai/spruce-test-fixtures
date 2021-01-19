@@ -11,7 +11,7 @@
 		"build/**/*",
 		"tsconfig.json"
 	],
-	"description": "Spruce Conversation! 🗣",
+	"description": "Spruce Test Fixtures! 🛋",
 	"keywords": [
 		"node",
 		"sprucelabs"
