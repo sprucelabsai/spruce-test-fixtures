@@ -1,6 +1,8 @@
+import { SpruceSchemas } from '@sprucelabs/spruce-core-schemas'
 import { eventResponseUtil } from '@sprucelabs/spruce-event-utils'
 import PersonFixture from './PersonFixture'
 
+type Skill = SpruceSchemas.Spruce.v2020_07_22.Skill
 export class SkillFixture {
 	private personFixture: PersonFixture
 
@@ -20,7 +22,7 @@ export class SkillFixture {
 
 		const { skill } = eventResponseUtil.getFirstResponseOrThrow(results)
 
-		return skill
+		return skill as Skill
 	}
 
 	public async destory() {
