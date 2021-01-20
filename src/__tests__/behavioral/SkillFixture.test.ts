@@ -1,4 +1,4 @@
-import AbstractSpruceTest, { test, assert } from '@sprucelabs/test'
+import { test, assert } from '@sprucelabs/test'
 import FixtureFactory from '../../fixtures/FixtureFactory'
 import { SkillFixture } from '../../fixtures/SkillFixture'
 import AbstractSpruceFixtureTest from '../../tests/AbstractSpruceFixtureTest'
