@@ -1,3 +1,10 @@
+# [1.0.0](https://github.com/sprucelabsai/spruce-test-fixtures/compare/v0.0.5...v1.0.0) (2021-01-20)
+
+
+### Breaking Changes
+
+* first release ([7d0f21c](https://github.com/sprucelabsai/spruce-test-fixtures/commit/7d0f21c))
+
 ## [0.0.5](https://github.com/sprucelabsai/spruce-test-fixtures/compare/v0.0.4...v0.0.5) (2021-01-20)
 
 ## [0.0.4](https://github.com/sprucelabsai/spruce-test-fixtures/compare/v0.0.3...v0.0.4) (2021-01-19)
