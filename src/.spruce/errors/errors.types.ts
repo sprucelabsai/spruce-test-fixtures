@@ -8,30 +8,39 @@ import * as SpruceSchema from '@sprucelabs/schema'
 
 
 
-export declare namespace SpruceErrors.SpruceConversation {
+export declare namespace SpruceErrors.SpruceTestFixtures {
 
 	
-	export interface InvalidTopic {
+	export interface InvalidFixture {
 		
 			
-			'topicScript': string
+			'suppliedName': string
+			
+			'validNames': string[]
 	}
 
-	export interface InvalidTopicSchema extends SpruceSchema.Schema {
-		id: 'invalidTopic',
-		namespace: 'SpruceConversation',
-		name: 'Invalid topic',
+	export interface InvalidFixtureSchema extends SpruceSchema.Schema {
+		id: 'invalidFixture',
+		namespace: 'SpruceTestFixtures',
+		name: 'Invalid factory',
 		    fields: {
 		            /** . */
-		            'topicScript': {
+		            'suppliedName': {
 		                type: 'text',
 		                isRequired: true,
+		                options: undefined
+		            },
+		            /** . */
+		            'validNames': {
+		                type: 'text',
+		                isRequired: true,
+		                isArray: true,
 		                options: undefined
 		            },
 		    }
 	}
 
-	export type InvalidTopicEntity = SchemaEntity<SpruceErrors.SpruceConversation.InvalidTopicSchema>
+	export type InvalidFixtureEntity = SchemaEntity<SpruceErrors.SpruceTestFixtures.InvalidFixtureSchema>
 
 }
 

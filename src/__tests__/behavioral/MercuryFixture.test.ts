@@ -1,12 +1,13 @@
 import AbstractSpruceTest, { test, assert } from '@sprucelabs/test'
-import { MercuryFixture } from '../../fixtures/MercuryFixture'
+import FixtureFactory from '../../fixtures/FixtureFactory'
+import MercuryFixture from '../../fixtures/MercuryFixture'
 
 export default class MercuryFixtureTest extends AbstractSpruceTest {
 	private static fixture: MercuryFixture
 
 	protected static async beforeEach() {
 		await super.beforeEach()
-		this.fixture = new MercuryFixture()
+		this.fixture = FixtureFactory.Fixture('mercury')
 	}
 
 	@test()

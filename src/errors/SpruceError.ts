@@ -12,6 +12,13 @@ export default class SpruceError extends BaseSpruceError<ErrorOptions> {
 					', '
 				)}`
 				break
+
+			case 'INVALID_FIXTURE':
+				message = `"${
+					options.suppliedName
+				}" is not a valid fixture. Try: ${options.validNames.join(', ')}.`
+				break
+
 			default:
 				message = super.friendlyMessage()
 		}
@@ -24,16 +31,6 @@ export default class SpruceError extends BaseSpruceError<ErrorOptions> {
 				: ''
 		}`
 
-		// Handle repeating text from original message by remove it
-		return `${fullMessage}${
-			this.originalError &&
-			this.originalError.message !== fullMessage &&
-			this.originalError.message !== message
-				? `\n\nOriginal error: ${this.originalError.message.replace(
-						message,
-						''
-				  )}`
-				: ''
-		}`
+		return fullMessage
 	}
 }

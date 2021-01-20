@@ -1,6 +1,6 @@
 import { MercuryClient, MercuryClientFactory } from '@sprucelabs/mercury-client'
 
-export class MercuryFixture {
+export default class MercuryFixture {
 	private clientPromise?: Promise<MercuryClient<any>>
 
 	public async connectToApi() {

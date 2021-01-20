@@ -44,7 +44,8 @@
 		"@sprucelabs/schema": "latest",
 		"@sprucelabs/spruce-core-schemas": "latest",
 		"@sprucelabs/spruce-event-utils": "latest",
-		"@sprucelabs/spruce-skill-utils": "latest"
+		"@sprucelabs/spruce-skill-utils": "latest",
+		"dotenv": "^8.2.0"
 	},
 	"devDependencies": {
 		"@babel/cli": "^7.12.10",
@@ -58,7 +59,7 @@
 		"@sprucelabs/jest-json-reporter": "latest",
 		"@sprucelabs/semantic-release": "latest",
 		"@sprucelabs/test": "latest",
-		"@sprucelabs/test-utils": "latest",
+		"@sprucelabs/test-utils": "^3.0.33",
 		"@types/node": "^14.14.21",
 		"babel-plugin-module-resolver": "^4.1.0",
 		"chokidar-cli": "^2.1.0",
