@@ -1,4 +1,5 @@
 import { MercuryClient } from '@sprucelabs/mercury-client'
+import Skill from '@sprucelabs/spruce-skill-utils'
 import MercuryFixture from '../fixtures/MercuryFixture'
 import OrganizationFixture from '../fixtures/OrganizationFixture'
 import PersonFixture from '../fixtures/PersonFixture'
@@ -14,3 +15,10 @@ export interface FixtureMap {
 }
 
 export type FixtureName = keyof FixtureMap
+
+export interface SkillFactoryOptions {
+	activeDir?: string
+	rootDir?: string
+	hashSpruceDir?: string
+	plugins?: ((skill: Skill) => void)[]
+}
