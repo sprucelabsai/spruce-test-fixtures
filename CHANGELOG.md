@@ -1,3 +1,5 @@
+## [1.0.2](https://github.com/sprucelabsai/spruce-test-fixtures/compare/v1.0.1...v1.0.2) (2021-01-20)
+
 ## [1.0.1](https://github.com/sprucelabsai/spruce-test-fixtures/compare/v1.0.0...v1.0.1) (2021-01-20)
 
 # [1.0.0](https://github.com/sprucelabsai/spruce-test-fixtures/compare/v0.0.5...v1.0.0) (2021-01-20)
